@@ -1,0 +1,28 @@
+<div>
+        <nav class="navbar navbar-inverse" style=" background-color: antiquewhite">
+           <div>
+              Products
+           </div>
+           <div>
+              <button type="button" class="btn btn-primary" (click)="doLogout()">Logout</button>
+           </div>
+        </nav>
+        <div class=" row col-md-12 btnDiv">
+           <div class="col-md-6" style="text-align: center;
+              display: inline-block;">
+              <img  class="images imgHeightNWidth" src={{productList.ImageUrl}}/>
+           </div>
+           <div class="col-md-6">
+              <div class="row"> <span><b>Name:</b></span> <span>{{productList.Name}}</span> </div>
+              <div class="row">
+                 <span><b>Description:</b></span> 
+                 <p>{{productList.Description}}</p>
+              </div>
+              <div class="row"> <span><b>Price:</b></span> <span> &nbsp; &#x20B9;{{productList.price}}/-</span> </div>
+              <div class="row"> <span><b>Availability:</b></span> <span>{{productList.Availability == 'A' ? 'Available':'Out of the stock'}}</span> </div>
+              <div class="row btnDiv" >
+                 <button type="button" class="btn btn-primary"[disabled]=" productList.Availability == 'O'" >Add To Cart</button>
+              </div>
+           </div>
+        </div>
+     </div>

@@ -1,0 +1,15 @@
+.topMargin{
+    margin-top:8px;
+}
+
+.loginDiv{
+    background-color: antiquewhite;
+         text-align: center;
+          margin-top: 1%;   
+           height: 250px;
+        width: 400px; 
+        display: inline-block;   
+          box-shadow: 2px 3px 12px 3px #d0c6c6;    
+           border-radius: 10px;
+   
+}

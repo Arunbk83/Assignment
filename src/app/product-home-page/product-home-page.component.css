@@ -1,0 +1,13 @@
+.imgHeightNWidth {
+	height: 300px;
+	width: 300px;
+}
+
+.btnDiv {
+	margin-top: 20px;
+}
+
+.divContentAlign {
+	text-align: center;
+	display: inline-block;
+}
